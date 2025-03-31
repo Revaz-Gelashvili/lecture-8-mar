@@ -158,6 +158,17 @@ select {
   );
 }
 
+.price::after {
+  content: url(../image/Line\ 380.png);
+  width: 22px;
+  padding-left: 5px;
+}
+
+.old-price {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: line-through;
+}
+
 .coupon {
   display: block;
   line-height: 64px;
