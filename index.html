@@ -3,14 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/config.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/config.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <section class="main-section">
-      <div class="sign-in-block">1</div>
+      <div class="sign-in-block">
+        <div class="header-section">
+          <h3 class="header-status">Premium</h3>
+          <h3 class="header-price">$199/month</h3>
+        </div>
+        <div>
+          <h3 class="header-instagram-growth">Faster Instagram Growth</h3>
+        </div>
+        <div class="middle-section">
+          <form action="#">
+            <input type="email" id="email" placeholder="Email" required />
+            <input
+              type="text"
+              id="cardholder-name"
+              placeholder="CardHolder Name"
+            />
+            <input
+              class="card-number"
+              type="number"
+              id="cardnumber"
+              placeholder="Card Number"
+              required
+            />
+            <div class="card-date-cvv">
+              <input
+                class="select-country"
+                type="date"
+                id="date"
+                placeholder="Date"
+              />
+
+              <input type="number" id="cvv" placeholder="CVV" required />
+              <select
+                class="select-country"
+                name="country"
+                id="selected-country"
+                required
+              >
+                <option value="" disabled selected>Select Country</option>
+                <option value="georgia">Georgia</option>
+                <option value="german">German</option>
+                <option value="france">France</option>
+                <option value="china">China</option>
+              </select>
+              <input type="number" placeholder="Zip" required />
+            </div>
+            <input
+              type="text"
+              id="discount-code"
+              placeholder="Discount Code"
+              required
+            />
+          </form>
+        </div>
+        <div class="terms-of-service">
+          <input type="checkbox" id="checkbox" class="check" />
+          <p class="bottom-p">
+            I accept the <a class="terms" href="#">Terms of Service</a> and
+            <a class="terms" href="#">Privacy Policy</a>
+          </p>
+        </div>
+        <button class="submit-btn" type="submit">Get started $199 $249</button>
+        <p class="coupon"><a href="#">Have a coupon?</a></p>
+      </div>
     </section>
   </body>
 </html>

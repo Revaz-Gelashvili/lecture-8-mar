@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .main-section {
   height: 100vh;
   width: 100%;
@@ -7,6 +13,161 @@
 }
 
 .sign-in-block {
-  width: 552;
+  width: 552px;
   height: 832px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 64px 10px;
+}
+
+/*                                 Header Section                                     */
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-status {
+  line-height: 48px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header-price {
+  line-height: 25px;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.header-instagram-growth {
+  color: rgba(33, 38, 40, 1);
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 43px;
+}
+
+/*                                 Middle Section                                    */
+
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 54px 0 24px;
+  font-weight: 400;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 27px;
+}
+
+.card-number {
+  background-image: url("../image/card.svg");
+  background-position: right 25px center;
+  background-repeat: no-repeat;
+  padding-right: 25px;
+}
+
+.card-date-cvv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-date-cvv input[type="number"] {
+  width: 119px;
+}
+
+.card-date-cvv input[type="date"],
+select {
+  width: 282px;
+  margin-right: 23px;
+  height: 54px;
+}
+
+.select-country {
+  font-weight: 400;
+  font-size: 18px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 54px 0 24px;
+}
+
+.select-country option:disabled {
+  opacity: 0.1;
+}
+
+/*                                 Bottom Section                                    */
+
+.terms-of-service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 29px;
+}
+
+.check {
+  height: 22px;
+  width: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 6px;
+  appearance: none;
+  position: relative;
+}
+
+.check:checked::after {
+  content: url("../image/Vector.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-p {
+  color: rgba(33, 38, 40, 0.5);
+}
+
+.terms {
+  text-decoration: underline;
+  color: rgba(222, 49, 111);
+}
+
+.submit-btn {
+  width: 370px;
+  height: 64px;
+  border-radius: 45px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(
+    270deg,
+    #c23584 0%,
+    #e2306c 24.48%,
+    #f77736 83.85%,
+    #fa963e 100%
+  );
+}
+
+.coupon {
+  display: block;
+  line-height: 64px;
+  font-weight: 700;
+  font-size: 18px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.coupon a {
+  color: rgba(225, 48, 108, 1);
+  text-decoration: none;
 }
